@@ -96,7 +96,7 @@ def control():
         if k2 == "mand":
             if req_data[k2] == "restart":
                 print('restart mand')
-                os.system('killall sleep')
+                os.system('killall mand')
                 return make_response(jsonify({'200OK': 'mand restart'}))
     
     return make_response(jsonify({'error': 'command not found'}), 404)
