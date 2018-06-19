@@ -16,7 +16,7 @@ def get_filfullpath(filename):
     fullpath= prefix + filename
 
     print(fullpath)
-    if not os.path.exists(filename):
+    if not os.path.exists(fullpath):
         return None
     
     return fullpath
